@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArgenMex - Resto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./imagenes/logo.jpg" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
                 <li>
                     <a href="./index.html">Inicio</a>
+                    <ul>
+                        <li>Sub pagina de inicio</li>
+                        <li>elemento de lista 2</li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="./quienes-somos.html">Quienes somos?</a>
+                    <a id="quienesSomos" href="./quienes-somos.html">Quienes somos?</a>
                 </li>
                 <li>
                     <a href="./comprar.html">Comprar</a>
@@ -25,16 +33,26 @@
             </ul>
         </nav>
         <div>
-            <img src="./imagenes/logo.jpg" alt="Logo del restaurant ArgenMex">
+            <img id="logoIndex" src="./imagenes/logo.jpg" alt="Logo del restaurant ArgenMex">
         </div>
     </header>
     <main>
-        <section>
-            
+        <section class="seccionH1">
+            <h1 class="claseH1" id="tituloIndex">BIENVENIDO AL RESTAURANT ARGEN-MEX</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque eveniet mollitia quas ea, ab
+                repellat rerum tempore perspiciatis aut ipsa facere nisi? Illum quis saepe sapiente corrupti. Modi,
+                ducimus.</p>
         </section>
     </main>
-    <footer>
+    <footer class="footerIndex">
         <p>ArgenMex --- Todos los derechos reservados</p>
+        <div>
+            <a href="https://es-la.facebook.com/" target="_blank">
+                <iconify-icon class="iconoFacebook" icon="ic:outline-facebook"></iconify-icon>
+            </a>
+        </div>
     </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 </body>
+
 </html>

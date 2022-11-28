@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* font-family: 'Montserrat',
+sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logoIndex {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.seccionH1 {
+    background-color: aqua;
+    border: 2px dashed red;
+    text-align: justify;
+    color: coral;
+}
+
+.seccionH1 .claseH1 {
+    font-size: 50px;
+}
+
+
+h1 {
+    color: red;
+    border: 5px dashed blue;
+    border-style: solid;
+    font-size: 30px;
+}
+
+p {
+    text-align:left;
+}
+
+.iconoFacebook {
+    font-size: 50px;
+}
+
+.iconoFacebook:hover {
+    color: red;
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
