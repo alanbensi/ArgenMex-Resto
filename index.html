@@ -1,47 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArgenMex - Resto</title>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ArgenMex - Resto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="base.css">
     <link rel="shortcut icon" href="./imagenes/logo.jpg" type="image/x-icon">
 </head>
-
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                    <ul>
-                        <li>Sub pagina de inicio</li>
-                        <li>elemento de lista 2</li>
-                    </ul>
-                </li>
-                <li>
-                    <a id="quienesSomos" href="./quienes-somos.html">Quienes somos?</a>
-                </li>
-                <li>
-                    <a href="./comprar.html">Comprar</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid contenedorNavbar">
+                <div>
+                    <a class="navbar-brand" href="#">
+                        <img src="./imagenes/logo.jpg" alt="Logo Restaurante ArgenMex" class="logo" >
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse contenedorLinksNav" id="navbarNavAltMarkup">
+                    <div class="navbar-nav linksNav">
+                        <ul id="listaNavPrueba">
+                            
+                        </ul>
+                        <a class="nav-link" id="prueba" aria-current="page" href="#">Nosotros</a>
+                        <a class="nav-link" href="#">Menú</a>
+                        <a class="nav-link" href="#">Preguntas frecuentes</a>
+                        <a class="nav-link" href="#">Contacto</a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <iconify-icon class="iconoCarrito" icon="material-symbols:shopping-cart-outline"></iconify-icon> 
+                        </a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <div>
-            <img id="logoIndex" src="./imagenes/logo.jpg" alt="Logo del restaurant ArgenMex">
-        </div>
     </header>
-    <main>
-        <section class="seccionH1">
-            <h1 class="claseH1" id="tituloIndex">BIENVENIDO AL RESTAURANT ARGEN-MEX</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque eveniet mollitia quas ea, ab
-                repellat rerum tempore perspiciatis aut ipsa facere nisi? Illum quis saepe sapiente corrupti. Modi,
-                ducimuss.</p>
+    <main class="mt-5">
+        <section class="contenedorGeneralBienvenida">
+            <div class="contenedorImgTitulo">
+                <div class="contenedorImgBienvenida">
+                    <img src="./imagenes/buenos-aires.jpg" alt="Ciudad de Buenos Aires">
+                    <img src="./imagenes/puebla.jpg" alt="Estado de Puebla">
+                </div>
+                <h1  class="tituloBienvenida">BIENVENIDOS A<span>ARGEN-MEX</span>
+                </h1>
+                <h2>El primer restaurante multi-cultural que mezcla lo mejor de la gastronomía Argentina y la Mexicana.</h2>
+                <div class="prueba">
+                    <a href="#">Hacé tu pedido 😊</a>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="contenedorProductos"></section>
+        <!-- <section>
+            <div class="card cardBuenosAires">
+                <img src="./imagenes/buenos-aires.jpg" class="card-img-top" alt="Foto buenos aires">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text textoCard">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                        <button type="button" class="btn btn-primary botonPruebaMixin ">Visita Buenos Aires</button>
+                </div>
+            </div>
+        </section> -->
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imagenes/logo.jpg" class="d-block w-100 imgCarrusel" alt="logo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/puebla.jpg" class="d-block w-100 imgCarrusel" alt="Puebla">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/buenos-aires.jpg" class="d-block w-100 imgCarrusel" alt="Buenos Aires">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
     </main>
     <footer class="footerIndex">
@@ -52,7 +113,11 @@
             </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="./scripts/funciones.js"></script>
 </body>
 
 </html>

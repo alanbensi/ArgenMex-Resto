@@ -1,0 +1,25 @@
+// .btnCorrecto {
+//     font-size: 25px;
+//     color: red;
+//     padding: 1rem;
+//     border-radius: 20px;
+// }
+
+
+@mixin botonesCarrito ($colorFondoBoton) {
+    font-size: 25px;
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: $colorFondoBoton;
+}
+
+@mixin posicionBienvenida ($altura, $tamanoLetra, $color) {
+    position: absolute;
+    top: $altura;
+    color: $color;
+    text-align: center;
+    width: 100%;
+    font-size: $tamanoLetra;
+}
+

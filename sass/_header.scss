@@ -1,0 +1,35 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: $negroPaleta;
+    z-index: 1000;
+    nav {
+        .contenedorNavbar {
+            display: flex;
+            justify-content: space-between;
+            .logo {
+                width: 6rem;
+                border-radius: 10px;
+                border: black 2px solid;
+                margin: 1rem;
+            }
+            .contenedorLinksNav  {
+                justify-content: end;
+                .linksNav {
+                    gap: 35px;
+                    padding-right: 3rem;
+                    a{
+                        color: $blancoPaleta;
+                    }
+                }
+            }
+            div {
+                .iconoCarrito {
+                    color: $blancoPaleta;
+                    font-size: 30px;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
