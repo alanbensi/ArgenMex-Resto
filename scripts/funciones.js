@@ -103,24 +103,16 @@
 
 
 const comidas = [
-    { id: 1, nombre: "Hamburguesa", precio: 5500, img: "../imagenes/logo.jpg" },
-    { id: 2, nombre: "Pizza", precio: 1200, img: "img.jpg" },
-    { id: 3, nombre: "ZAPALLITOS RELLENOS", precio: 300, img: "img.jpg" },
-    { id: 4, nombre: "ARROZ", precio: 100, img: "img.jpg" },
-    { id: 5, nombre: "Hamburguesa con cheddar", precio: 500, img: "../imagenes/logo.jpg" },
-    { id: 6, nombre: "Pizza calabresa", precio: 200, img: "img.jpg" },
-    { id: 7, nombre: "WRAP DE CARNE", precio: 4000, img: "img.jpg" },
-    { id: 8, nombre: "Fideos con salsa blanca", precio: 20, img: "img.jpg" },
-    { id: 9, nombre: "Pizza calabresa", precio: 500, img: "img.jpg" },
-    { id: 10, nombre: "Hamburguesa", precio: 5500, img: "../imagenes/logo.jpg" },
-    { id: 11, nombre: "Pizza", precio: 1200, img: "img.jpg" },
-    { id: 12, nombre: "ZAPALLITOS RELLENOS", precio: 300, img: "img.jpg" },
-    { id: 13, nombre: "ARROZ", precio: 100, img: "img.jpg" },
-    { id: 14, nombre: "Hamburguesa con cheddar", precio: 500, img: "../imagenes/logo.jpg" },
-    { id: 15, nombre: "Pizza calabresa", precio: 200, img: "img.jpg" },
-    { id: 16, nombre: "WRAP DE CARNE", precio: 4000, img: "img.jpg" },
-    { id: 17, nombre: "Fideos con salsa blanca", precio: 20, img: "img.jpg" },
-    { id: 18, nombre: "Pizza calabresa", precio: 500, img: "img.jpg" },
+    { id: 1, nombre: "Tacos al pastor", precio: 400, img: "../imagenes/tacos-al-pastor.jpg", pais: "mex" , cantidad: 1 },
+    { id: 2, nombre: "Asado (carne argentina)", precio: 700, img: "../imagenes/asado.jpg", pais: "arg", cantidad: 1 },
+    { id: 3, nombre: "Nachos", precio: 120, img: "../imagenes/nachos.jpg", pais: "mex", cantidad: 1 },
+    { id: 4, nombre: "Locro", precio: 400, img: "../imagenes/locro.jpg", pais: "arg", cantidad: 1 },
+    { id: 5, nombre: "Pollo con mole", precio: 800, img: "../imagenes/Mole.jpg", pais: "mex", cantidad: 1 },
+    { id: 6, nombre: "Cordero patagonico con papas", precio: 730, img: "../imagenes/cordero-patagonico.jpg", pais: "arg", cantidad: 1 },
+    { id: 7, nombre: "Chiles en nogada", precio: 600, img: "../imagenes/chiles-nogada.jpg", pais: "mex", cantidad: 1 },    
+    { id: 8, nombre: "Pastel de papa", precio: 460, img: "../imagenes/pastel-papa.jpg", pais: "arg", cantidad: 1 },
+    { id: 9, nombre: "Pozole", precio: 750, img: "../imagenes/pozole.jpg", pais: "mex", cantidad: 1 },
+    { id: 10, nombre: "Empanada Salteña", precio: 330, img: "../imagenes/empanada-saltena.jpg", pais: "arg", cantidad: 1 },
 ];
 
 let suma = 0;
@@ -343,11 +335,15 @@ const contenedorProductos = document.getElementById("contenedorProductos");
 
 comidas.forEach (comida => {
     contenedorProductos.innerHTML += 
-    `<div style="background-color:rgb(${Math.random ()*256} 120 50">
-    <h2>${comida.nombre} </h2> 
-        <img src ="${comida.img}" alt="${comida.nombre}">
-        <p> Precio: ${comida.precio}</p>
+    `
+    <div class="card cardComidas">
+        <img src="${comida.img}" class="card-img-top imgComidas" alt="${comida.nombre}">
+        <div class="card-body cuerpoCard">
+            <h3 class="card-title tituloComida">${comida.nombre}</h3>
+            <p class="card-text precioComida">Precio: $${comida.precio} </p>
+            <button class="btn btnAgregarCarrito" id="${comida.id}">AGREGAR AL CARRITO</button>
         </div>
-        `
+    </div>
+    `
 })
 
