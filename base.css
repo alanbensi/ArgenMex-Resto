@@ -39,10 +39,26 @@ header nav .contenedorNavbar .contenedorLinksNav .linksNav {
 header nav .contenedorNavbar .contenedorLinksNav .linksNav a {
   color: #FFFFFF;
 }
-header nav .contenedorNavbar div .iconoCarrito {
+header nav .contenedorNavbar .contenedorLinksNav .canvasCarrito {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+header nav .contenedorNavbar .contenedorLinksNav .canvasCarrito .iconoCarrito {
   color: #FFFFFF;
   font-size: 30px;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+}
+header nav .contenedorNavbar .contenedorLinksNav .canvasCarrito .contadorCarrito {
+  color: #FFFFFF;
+  margin: 0;
+  background-color: #6EBBBF;
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 main .contenedorGeneralBienvenida {

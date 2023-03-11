@@ -31,9 +31,10 @@
                         <a class="nav-link" href="#">Preguntas frecuentes</a>
                         <a class="nav-link" href="#">Contacto</a>
                     </div>
-                    <div class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    <div id="carritoCanvas" class="btn canvasCarrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                         aria-controls="offcanvasRight">
                         <iconify-icon class="iconoCarrito" icon="material-symbols:shopping-cart-outline"></iconify-icon>
+                        <p id="contadorCarrito"></p>
                     </div>                           
                 </div>
             </div>
@@ -58,14 +59,18 @@
             <!-- OFF CANVAS-->
             <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header mt-2">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">CARRITO DE COMPRAS</h5>
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">CARRITO DE COMPRAS 😉😎</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body"></div>
+                <div class="offcanvas-body" id="contenidoCarrito">
+
+                </div>
             </div>
         </section>
         <h2 class="tituloSeccionComidas">NUESTRAS DELICIAS</h2>
-        <section class="contenedorProductos" id="contenedorProductos"></section>
+        <section class="contenedorProductos" id="contenedorProductos">
+            
+        </section>
     </main>
     <footer class="footerIndex">
         <p>ArgenMex --- Todos los derechos reservados</p>

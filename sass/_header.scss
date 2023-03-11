@@ -22,12 +22,26 @@ header {
                         color: $blancoPaleta;
                     }
                 }
-            }
-            div {
-                .iconoCarrito {
-                    color: $blancoPaleta;
-                    font-size: 30px;
+                .canvasCarrito {
+                    display: flex;
+                    align-items: center;
                     margin-right: 1rem;
+                    .iconoCarrito {
+                        color: $blancoPaleta;
+                        font-size: 30px;
+                        margin-right: 0.5rem;
+                    }
+                    .contadorCarrito {
+                        color: $blancoPaleta;
+                        margin: 0;
+                        background-color: $celestePaleta;
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 100%;
+                        text-align: center;
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
                 }
             }
         }

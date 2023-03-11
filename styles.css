@@ -3,6 +3,12 @@
 /* font-family: 'Montserrat',
 sans-serif; */
 
+
+.productosEnCarrito {
+    display: flex;
+    justify-content: space-between;
+}
+
 .seccionH1 {
     background-color: aqua;
     border: 2px dashed red;
