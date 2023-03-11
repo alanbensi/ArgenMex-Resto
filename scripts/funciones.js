@@ -315,16 +315,16 @@ const contenidoCarrito = document.getElementById ("contenidoCarrito");
 // ARRAY DE PRODUCTOS
 
 const comidas = [
-    { id: 1, nombre: "Tacos al pastor", precio: 400, img: "./imagenes/tacos-al-pastor.jpg", pais: "mex", cantidad: 1 },
-    { id: 2, nombre: "Asado (carne argentina)", precio: 700, img: "./imagenes/asado.jpg", pais: "arg", cantidad: 1 },
-    { id: 3, nombre: "Nachos", precio: 120, img: "./imagenes/nachos.jpg", pais: "mex", cantidad: 1 },
-    { id: 4, nombre: "Locro", precio: 400, img: "./imagenes/locro.jpg", pais: "arg", cantidad: 1 },
-    { id: 5, nombre: "Pollo con mole", precio: 800, img: "./imagenes/Mole.jpg", pais: "mex", cantidad: 1 },
-    { id: 6, nombre: "Cordero patagonico con papas", precio: 730, img: "./imagenes/cordero-patagonico.jpg", pais: "arg", cantidad: 1 },
-    { id: 7, nombre: "Chiles en nogada", precio: 600, img: "./imagenes/chiles-nogada.jpg", pais: "mex", cantidad: 1 },
-    { id: 8, nombre: "Pastel de papa", precio: 460, img: "./imagenes/pastel-papa.jpg", pais: "arg", cantidad: 1 },
-    { id: 9, nombre: "Pozole", precio: 750, img: "./imagenes/pozole.jpg", pais: "mex", cantidad: 1 },
-    { id: 10, nombre: "Empanada Salteña", precio: 330, img: "./imagenes/empanada-saltena.jpg", pais: "arg", cantidad: 1 },
+    { id: 1, nombre: "Tacos al pastor", precio: 400, img: "../imagenes/tacos-al-pastor.jpg", pais: "mex", cantidad: 1 },
+    { id: 2, nombre: "Asado (carne argentina)", precio: 700, img: "../imagenes/asado.jpg", pais: "arg", cantidad: 1 },
+    { id: 3, nombre: "Nachos", precio: 120, img: "../imagenes/nachos.jpg", pais: "mex", cantidad: 1 },
+    { id: 4, nombre: "Locro", precio: 400, img: "../imagenes/locro.jpg", pais: "arg", cantidad: 1 },
+    { id: 5, nombre: "Pollo con mole", precio: 800, img: "../imagenes/Mole.jpg", pais: "mex", cantidad: 1 },
+    { id: 6, nombre: "Cordero patagonico con papas", precio: 730, img: "../imagenes/cordero-patagonico.jpg", pais: "arg", cantidad: 1 },
+    { id: 7, nombre: "Chiles en nogada", precio: 600, img: "../imagenes/chiles-nogada.jpg", pais: "mex", cantidad: 1 },
+    { id: 8, nombre: "Pastel de papa", precio: 460, img: "../imagenes/pastel-papa.jpg", pais: "arg", cantidad: 1 },
+    { id: 9, nombre: "Pozole", precio: 750, img: "../imagenes/pozole.jpg", pais: "mex", cantidad: 1 },
+    { id: 10, nombre: "Empanada Salteña", precio: 330, img: "../imagenes/empanada-saltena.jpg", pais: "arg", cantidad: 1 },
 ];
 
 // ARRAY DE CARRITO DE COMPRAS
